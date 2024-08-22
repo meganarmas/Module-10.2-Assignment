@@ -10,7 +10,7 @@ function deposit(amount){
 
 // Task 2: Implement a function to handle withdrawals from a bank account, ensuring sufficient balance.
 
-function withdrawl(amount){
+function withdrawal(amount){
     if (amount <= balance){
         balance -= amount;
         console.log(`Withdrew: $${amount}. New balance: $${balance}`);
@@ -27,5 +27,5 @@ function checkBalance(){
 }
 
 deposit(150);
-withdrawl(50);
+withdrawal(50);
 checkBalance();
